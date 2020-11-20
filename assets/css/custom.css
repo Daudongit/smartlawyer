@@ -1,0 +1,25 @@
+.btn-fix{
+    padding: 8px 13px;
+    border-radius: 5px;
+}
+
+body.bg-black::before{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+div#login-box,div.alert{
+    position: relative;
+    z-index: 2;
+}
+
+div.alert{
+    background-color: white;
+}
