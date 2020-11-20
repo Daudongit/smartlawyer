@@ -7,7 +7,7 @@
 	"support": {
 		"forum": "http://forum.codeigniter.com/",
 		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
-		"slack": "https://codeigniterchat.slack.com",
+		"irc": "irc://irc.freenode.net/codeigniter",
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
@@ -18,8 +18,22 @@
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
 	},
 	"require-dev": {
-		"mikey179/vfsstream": "1.1.*",
+		"mikey179/vfsStream": "1.1.*",
 		"phpunit/phpunit": "4.* || 5.*",
 		"symfony/var-dumper": "~2.8|~3.0"
-	}
+	},
+	"autoload":{
+	     "classmap": 
+	        [
+	          "application/models",
+	          "application/libraries/Wraper.php",
+	          "application/libraries/StudentInfoHelper.php",
+	          "application/libraries/lib",
+	          "application/libraries/CustomPerm.php"
+	        ],
+	        "files": 
+	        [
+	          
+	        ]
+	 }
 }

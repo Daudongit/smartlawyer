@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-// dd(getenv('DB_CONNECTION'));
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL

@@ -98,3 +98,15 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+if(getenv('HEROKU') === 'TRUE')
+{
+	$url = getenv('JAWSDB_MARIA_URL');
+	$dbparts = parse_url($url);
+
+	$db['default']['hostname'] = $dbparts['host'];
+	$db['default']['username'] = $dbparts['user'];
+	$db['default']['password'] = $dbparts['pass'];
+	$db['default']['database'] = ltrim($dbparts['path'],'/');
+	$db['default']['dbdriver'] = 'mysqli';
+}
